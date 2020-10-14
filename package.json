@@ -1,0 +1,22 @@
+{
+  "name": "dicegame",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Shanu Goyanka",
+  "main": "lib/cli.js",
+  "bin": {
+    "dicegame": "bin/dicegame"
+  },
+  "scripts": {
+    "compile": "rm -rf lib && tsc",
+    "start": "npm run compile && ./bin/dicegame play"
+  },
+  "dependencies": {
+    "@types/node": "^14.11.8",
+    "gluegun": "4.2.0",
+    "tslib": "2.0.1"
+  },
+  "devDependencies": {
+    "typescript": "3.9.3"
+  }
+}
